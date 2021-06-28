@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import AlbumFeature from './features/Song';
 import TodoFeature from './features/Todo';
 

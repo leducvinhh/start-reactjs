@@ -36,6 +36,7 @@ const AlbumFeature = () => {
     ];
     return (
         <div>
+            <h4 className="album-list">List Hot Music Jun 2021</h4>
             <AlbumList albumList={albumList} />
         </div>
     );
