@@ -21,6 +21,8 @@ const TodoFeature = () => {
         },
     ];
 
+    const [todoList, setTodoList] = useState(defaultTodoList);
+
     const handleTodoClick = (id) => {
         setTodoList(
             todoList.map((todo) =>
@@ -28,7 +30,6 @@ const TodoFeature = () => {
             )
         );
     };
-    const [todoList, setTodoList] = useState(defaultTodoList);
 
     //Show all todo
     const handleShowAll = () => {
@@ -46,7 +47,6 @@ const TodoFeature = () => {
     };
 
     const renderTodoList = todoList.filter((todo) => filterStatus === 'all' || filterStatus === todo.status);
-
     return (
         <div>
             <h3 className="todo-title">Todo List</h3>

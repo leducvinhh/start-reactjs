@@ -14,7 +14,7 @@ TodoList.defaultProps = {
 function TodoList({ todoList, onTodoClick }) {
     return (
         <ul className="todo-list">
-            {todoList.map((todo, index) => {
+            {todoList.map((todo) => {
                 return (
                     <li
                         key={todo.id}
