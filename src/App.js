@@ -1,5 +1,7 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { NavLink, Redirect, Route, Switch } from 'react-router-dom';
+import productsApi from './api/productsApi';
 import './App.scss';
 import NotFound from './components/NotFound';
 import AlbumFeature from './features/Song';
